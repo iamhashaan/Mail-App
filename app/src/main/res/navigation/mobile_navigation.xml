@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_sent">
+
+    <fragment
+        android:id="@+id/nav_all"
+        android:name="com.hashaan.mail.ui.tools.Inbox.All.All"
+        android:label="@string/menu_all"
+        tools:layout="@layout/all_fragment" />
+
+    <fragment
+        android:id="@+id/nav_contacts"
+        android:name="com.hashaan.mail.ui.tools.Inbox.Contacts.Contacts"
+        android:label="@string/contacts"
+        tools:layout="@layout/contacts_fragment" />
+
+    <fragment
+        android:id="@+id/nav_drafts"
+        android:name="com.hashaan.mail.ui.tools.Inbox.Drafts.Drafts"
+        android:label="@string/menu_drafts"
+        tools:layout="@layout/fragment_drafts" />
+
+    <fragment
+        android:id="@+id/nav_inbox"
+        android:name="com.hashaan.mail.ui.tools.Inbox.Inbox.Inbox"
+        android:label="@string/menu_inbox"
+        tools:layout="@layout/inbox_fragment" />
+
+    <fragment
+        android:id="@+id/nav_outbox"
+        android:name="com.hashaan.mail.ui.tools.Inbox.Outbox.Outbox"
+        android:label="@string/menu_outbox"
+        tools:layout="@layout/fragment_outbox" />
+
+    <fragment
+        android:id="@+id/nav_sent"
+        android:name="com.hashaan.mail.ui.tools.Inbox.Sent.Sent"
+        android:label="@string/menu_sent"
+        tools:layout="@layout/sent_fragment" />
+    <fragment
+        android:id="@+id/nav_starred"
+        android:name="com.hashaan.mail.ui.tools.Inbox.Starred.Starred"
+        android:label="@string/menu_starred"
+        tools:layout="@layout/fragment_starred" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.hashaan.mail.ui.tools.Inbox.Ssettings.Settings"
+        android:label="@string/Settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+</navigation>
